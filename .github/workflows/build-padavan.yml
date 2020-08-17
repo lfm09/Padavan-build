@@ -112,6 +112,26 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR=y" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_DROPBEAR_FAST_CODE=y" >> .config
+        #sed -i '/CONFIG_FIRMWARE_ENABLE_USB/d' .config
+        #echo "CONFIG_FIRMWARE_ENABLE_USB=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_ENABLE_UFSD/d' .config
+        #echo "CONFIG_FIRMWARE_ENABLE_UFSD=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_ENABLE_EXFAT/d' .config
+        #echo "CONFIG_FIRMWARE_ENABLE_EXFAT=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_ENABLE_EXT4/d' .config
+        #echo "CONFIG_FIRMWARE_ENABLE_EXT4=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_UVC/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_UVC=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_LPRD/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_LPRD=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_U2EC/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_U2EC=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_HDPARM/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_HDPARM=n" >> .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_PARTED/d' .config
+        #echo "CONFIG_FIRMWARE_INCLUDE_PARTED=n" >> .config
         #########################################################################################
         sudo ./clear_tree
         sudo ./build_firmware_modify $TNAME 0
