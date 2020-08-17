@@ -102,8 +102,6 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD=n" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SMBD36/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_SMBD36=n" >> .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_XUPNPD/d' .config
-        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_AUDIO/d' .config
         echo "CONFIG_FIRMWARE_INCLUDE_AUDIO=n" >> .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_FTPD/d' .config
